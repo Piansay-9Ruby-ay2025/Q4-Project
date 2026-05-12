@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4 Practice 3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loginstyles.css">
 </head>
-<body></body>
+<body>
+    <div class="container mt-10 p-4">
+        <img class="logo" alt="Logo" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/8b5611eb-ff3a-407f-9adc-e116a23373fc/OBMC+LOGO+2024-04.png">
+        <h1>Account Login</h1>
+        <p>Enter your credentials to log in.</p><hr>
+        <button class="btn btn-dark mb-2" onclick="showLoginHelp()">Forgot Credentials?</button>
+            <div class="container2">
+                <label>Username</label>
+                <input type="text" id="usernameInp" placeholder="Enter username"><br>
+                <label>Password</label>
+                <input type="password" id="passwordInp" placeholder="Enter password"> <br>
+                <input type="checkbox" id="visiblePass" onchange="toggleVisi()">Show password
+                <p id="loginMessage"></p>
+                <button class="btn btn-primary" onclick="login()">Login</button>
+                <button class="btn btn-secondary" onclick="window.location.reload()">Refresh</button>
+            </div>
+    </div>
+    <script src="login.js"></script>
+</body>
 </html>
