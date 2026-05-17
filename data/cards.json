@@ -1,0 +1,38 @@
+[
+  {
+    "image": "assets/ferns.png",
+    "name": "Ferns"
+  },
+  {
+    "image": "assets/flowers.png",
+    "name": "Flowers"
+  },
+  {
+    "image": "assets/flower2.png",
+    "name": "Flowers again"
+  },
+  {
+    "image": "assets/jelly.png",
+    "name": "Jellyfish"
+  },
+  {
+    "image": "assets/statues.png",
+    "name": "Statues"
+  },
+  {
+    "image": "assets/symbol.png",
+    "name": "Symbol"
+  },
+  {
+    "image": "assets/symbol2.png",
+    "name": "Symbol again"
+  },
+  {
+    "image": "assets/woman.png",
+    "name": "Woman"
+  },
+  {
+    "image": "assets/bird.png",
+    "name": "Bird"
+  }
+]

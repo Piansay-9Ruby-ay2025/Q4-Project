@@ -3,73 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Test</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <div class="d-flex bg-danger main-layout">
-        <!-- Col 1 -->
-        <div class="col1 bg-dark text-light p-4">
-            <img class="logo" alt="Logo" src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXE8swH9zh7uKG081PMHFkNqBe4pmDqAh%2FLvDZDbRzDWwJUtl2fXrKUk9cm0bRYlndwquIRIHMMq3G%2FzoiIlz6kdKYf51eSIEuRQTdTfnVZMnGGzIN%2BoYtacypBw6RrfuLIPTQFRfqHTthhHwmAOjlHtFeavxlesvuRuvz9PYMDVtMFjfGULryymEVNTcbdyMrAg0PQL9LeJBRG3lKuycgvcbCrK3Kp9G8%2BT%2BfnYwzQOgjudU08THoDMq6XDiQSxhg55De2zRufY7t4F3xdfBOGUU0JIZJws0sbNER7f417QqPD3dh6TTQsZJGbPbq3sbJLR88wWsQL2jatGR1FZBxOGQObQbJ7Swr%2BQoGdtHal2vRPUJEv1ZRkSoyoE%2BXb4NEEuhCLCPcmquB9EYu%2FE3EimyIkcemVNjNToqFX61Fd8VoDX7kYhfrVUV4MWvJQ0bwmKPVk98jaupo1psY3apeNcGIuoFS10NlRbIz%2B5NRfqoxPR4UANIkQVvJqFkhio99Uxpzp2I6n4KuiwPGouFKmyPxa0EgjetC8Tuw9yPLJIrgxw6q7Ptbun6bvjDHWkr5oduvlvio0gn5rlKQhTkM%3D&allow_caching=true&sz=w2880-h1380-rw&auditContext=forDisplay">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Virtual Notebooks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tasks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
-                </li>
-            </ul>
-        </div> 
-          <div class =" nav bg-dark text-light p-4"> 
-            <img src="" alt="">
-            <ul class ="nav flex-column"> 
-                <li>HELP </li>
-                <li>ABOUT </li>
-                <li>CONTACT </li>
-                <li>SERVICES </li>
-                <li>BLOG </li>
-           </ul>        
-        </div> 
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <img src="logo.png" height="130">
 
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center" href="#"></a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-        <!-- column2 -->
-        <div class="vn">
-        <h4 class="bg-dark text-white p-3 rounded"></h4>
-        <p></p>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="notebooks.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Playplace.html">Play Place</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Log Out</a></li>
+                </ul>
+            </div>
         </div>
-            
-            <!-- SUBJECT 1 -->
-            <div class="card img-fluid" style="width:300">
-                <img class="card-img-top" src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg?semt=ais_hybrid&w=740&q=80" alt="Card image" style="width:50%">
-                <div class="card-img">
-                <h4 class="card-title">Profile </h4>
+    </nav>
+
+    <div class="container">
+        <div class="card img-fluid">
+
+            <img class="card-img-top" src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg">
+
+            <div class="card-body">
+                <h4 class="card-title">Profile</h4>
                 <p>Name: Mike Macowstki</p>
-                 <p>Age: 32</p>
-                  <p>Sex: Male</p>
-                   <p>Contact:</p>
-                <p> 9-Apple:</p>
+                <p>Student Number: 103738172 </p>
+                <p>Fourth Year</p>
+            </div>
 
-                </div> 
-            </div> 
-
-         
-          
-
-            </div> 
         </div>
     </div>
 
+<footer class="footer text-center">
+    <h6>Student Portal System</h6>
+    <p>Group 5 | Grade 9 - Ruby</p>
+    <small>
+      
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+      <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+    </small>
+</footer>
+
+</body>
 </html>
+

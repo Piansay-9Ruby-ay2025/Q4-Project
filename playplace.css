@@ -1,0 +1,127 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #411e04;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-weight: 70px;
+    margin-top: 30px;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.actions button{
+    background-color: #C6933B;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    padding: 15px 30px;
+    font-size: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.card{
+    height: calc(140px/2*3);
+    width: 140px;
+    background-color:#30401B;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+    text-align: center;
+}
+.front-image{
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+}
+.card.flipped{
+    transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+.card-back{
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='80' height='80' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23f3e0c3ff'/><path d='M40 43.92L49.3 60 40 76.08 30.7 60zm40 32.22V43.92l-9.3 16.14zm-80 0l9.3-16.08L0 43.92zM59.97 3.86l9.31 16.08-9.3 16.08-9.32-16.08zm-40.22 0l9.3 16.08-9.3 16.08-9.31-16.08zm34.02 40.06l6.2 10.78 6.2-10.78zm-7.56-7.84L40 25.36l-6.2 10.72zM25.95 54.7H13.54l6.2 10.72zM73.8 25.36H80V14.64zM0 14.64v10.72h6.2z'  stroke-width='1' stroke='none' fill='%23c6933bff'/><path d='M80 50.35l-5.64 9.7L80 69.77zM0 69.76l5.64-9.7L0 50.36zm40-19.4l5.59 9.7-5.59 9.7-5.59-9.7zM54.39 20l5.58-9.7 5.59 9.7-5.59 9.7zm-40.23 0l5.59-9.7 5.58 9.7-5.58 9.7zm52.02 45.42H53.77l6.2 10.72zM33.79 14.64h12.42L40 3.86zM13.54 43.92l6.2 10.78 6.21-10.78zm60.25-7.84H80V25.36zM0 25.36v10.72h6.2z'  stroke-width='1' stroke='none' fill='%23b73d00ff'/><path d='M78.08 60.06L80 63.39v-6.66zm-76.16 0L0 56.73v6.66zm58.05-36.73L61.9 20l-1.92-3.33L58.05 20zm-40.22 0L21.66 20l-1.91-3.33L17.83 20zM66.18 54.7H53.77l6.2 10.72zM33.79 25.36h12.42L40 14.64zm-7.84 40.06H13.54l6.2 10.72zM73.8 14.64H80V3.86zM0 3.86v10.78h6.2zm38.08 56.2L40 63.39l1.92-3.33L40 56.73z'  stroke-width='1' stroke='none' fill='%2330401bff'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-position:  center center;
+    background-size: cover;
+    backface-visibility: hidden;
+}
+.custom-navbar {
+    padding: 20px 0;
+    background-color: #C6933B;
+}
+.nav-link {
+    color: white;
+    font-size: 18px;
+    margin: 0 8px;
+}
+.portal-btn {
+    background-color: #bf493d;
+    color: white;
+    border-radius: 30px;
+    padding: 20px 35px;
+    margin-left: 40px;
+}
+.portal-btn:hover {
+    background-color: #bf493d;
+    color: white;
+}
+.header-line {
+    height: 5px;
+    background-color: #bf493d;
+}
+.nav-item{
+    margin-left: 40px;
+    background-color: #bf493d;
+    border-radius: 40px;
+    padding: 10px;
+}
+.nav-item:hover{
+    margin-left: 40px;
+    background-color: #b73d00;
+    border-radius: 40px;
+    padding: 10px;
+}
+.footer{
+    background-color: #1c2331;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer a{
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
